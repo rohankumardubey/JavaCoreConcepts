@@ -1,0 +1,5 @@
+[DEBUG] 2021-09-22 21:23:52.392 [main] loggerPropertiesSample - Debug Message Logged !!!
+[INFO ] 2021-09-22 21:23:52.394 [main] loggerPropertiesSample - Info Message Logged !!!
+[ERROR] 2021-09-22 21:23:52.394 [main] loggerPropertiesSample - Error Message Logged !!!
+java.lang.NullPointerException: NullError
+	at com.company.PropertiesLogger.loggerPropertiesSample.main(loggerPropertiesSample.java:24) [classes/:?]
