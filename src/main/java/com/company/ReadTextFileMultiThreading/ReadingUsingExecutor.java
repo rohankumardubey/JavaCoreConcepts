@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 class ExecutorCore implements Runnable{
     @Override
     public void run() {
-        try(BufferedReader reader = new BufferedReader(new FileReader(new File("C:\\Users\\rdubey\\OneDrive - MODEL N, INC\\Desktop\\JavaPractise\\src\\main\\java\\com\\company\\ReadTextFile\\Sample.txt")))){
+        try(BufferedReader reader = new BufferedReader(new FileReader(new File("C:\\Users\\rdubey\\OneDrive - MODEL N, INC\\Desktop\\JavaPractise\\src\\main\\java\\com\\company\\ReadTextFileMultiThreading\\Sample.txt")))){
             String line=null;
             while((line=reader.readLine())!=null){
                 System.out.println(Thread.currentThread().getName()+" - "+line);
@@ -28,10 +28,10 @@ public class ReadingUsingExecutor {
         ExecutorCore core3 = new ExecutorCore();
 
 //        Executor executor = Executors.newSingleThreadExecutor();
-        ExecutorService executor = Executors.newSingleThreadExecutor();
-        executor.execute(core1);
-//        executor.execute(core2);
-//        executor.execute(core3);
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+        executor.submit(core1);
+        executor.execute(core2);
+        executor.execute(core3);
         executor.shutdown();
     }
 }

@@ -36,5 +36,6 @@ public class ArrayListUsage {
         for (VideoGame v : Sample) {
             System.out.println(v);
         }
+        System.out.println();
     }
 }
