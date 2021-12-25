@@ -81,6 +81,7 @@ com\company\StackUsage.class
 com\company\SuperClass\SuperKeywordUsage.class
 com\company\VectorUsage.class
 com\company\SuperClass\InheritanceMethodUsage.class
+com\company\JavCodingChallanges\PasswordComplexity.class
 com\company\MultiThreadUsingExtends.class
 com\company\MultiThreadingApi\CallMethodProcessor.class
 com\company\InnerClassDemo\Outer$Inner.class
@@ -124,3 +125,4 @@ com\company\LambdaPractise\ComplexInterfaceLambdaUsage.class
 com\company\ReadTextFileMultiThreading\ExecutorCore.class
 com\company\DataStructuresAndAlgorithms\Recussion\DecimalToBinary.class
 com\company\ClothingShop\MainClass.class
+com\company\JavCodingChallanges\OddOrEven.class
