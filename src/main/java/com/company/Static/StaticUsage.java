@@ -8,7 +8,6 @@ class StaticSample{
 
     static{
         tag_number="999";
-        System.out.println("this is static block");
     }
 
     public StaticSample(){
@@ -19,17 +18,33 @@ class StaticSample{
     }
 
     public void show(){
-        System.out.println("eid :"+eid +" number :"+number+" name :"+name +" tag number :"+tag_number);
+        System.out.println("eid : "+eid +"\n"
+                +"number : "+number+"\n"
+                +"name : "+name +"\n"+
+                "tag number : "+tag_number);
+    }
+
+    public  static void changeit(){
+        tag_number="changed";
     }
 }
 public class StaticUsage {
     public static void main(String[] args) {
+
+        System.out.println("===========================");
+
+        StaticSample defaultValues = new StaticSample();
+        defaultValues.show();
+
+
+        System.out.println("===========================");
         StaticSample one = new StaticSample();
         one.name="ron";
         one.number=1;
         one.eid=123;
         one.tag_number="888";
         one.show();
+        System.out.println("===========================");
 
 
         StaticSample two = new StaticSample();
@@ -39,15 +54,15 @@ public class StaticUsage {
         two.tag_number="777";
         two.show();
 
-        StaticSample defaultValues = new StaticSample();
-        defaultValues.show();
+        System.out.println("===========================");
 
-//        if(one.tag_number==two.tag_number){
-//            System.out.println("equal");
-//        }
-//        else{
-//            System.out.println("unequal");
-//        }
+        StaticSample.changeit();
+        StaticSample three = new StaticSample();
+        three.name="ron";
+        three.number=1;
+        three.eid=123;
+        three.show();
 
+        System.out.println("===========================");
     }
 }

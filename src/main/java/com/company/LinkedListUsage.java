@@ -31,7 +31,5 @@ public class LinkedListUsage {
             System.out.println(Backitr.previous());
         }
 
-
-
     }
 }
