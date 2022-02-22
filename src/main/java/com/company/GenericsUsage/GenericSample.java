@@ -19,6 +19,7 @@ public class GenericSample {
         System.out.println(genericSample(c,d));
     }
 
+    // Adding the elements of the first list to the second list.
     public static <T> List<T> genericSample(List<T> first, List<T> second){
         for (T t: first) {
             second.add(t);

@@ -2,6 +2,7 @@ package com.company.GenericsUsage;
 
 public  class GenericPrint {
 
+    // Printing the generic type of the parameter.
     public static <T> void printGeneric(T t){
         System.out.println(t);
     }

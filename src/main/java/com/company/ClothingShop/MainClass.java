@@ -35,6 +35,7 @@ public class MainClass {
 
     }
 
+    // Displaying the details of the item.
     public static void DisplayDetails(ClothingStore item) {
 
         String sample = item.getCloth();

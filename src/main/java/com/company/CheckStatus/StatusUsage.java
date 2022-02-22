@@ -9,6 +9,8 @@ public class StatusUsage {
     public static void main(String[] args) {
         System.out.println(checkStatus(6000));
     }
+
+    // The above code is checking the status of the previous code.
     public static CMnNifiProcessGroupStatus checkStatus(long timeBound) {
         String response;
         int input=1;
@@ -33,6 +35,7 @@ public class StatusUsage {
         return isCompleted;
     }
 
+    // A enum class which is used to check the status of the process group.
     public enum CMnNifiProcessGroupStatus{
         COMPLETED,TIMED_OUT
     }

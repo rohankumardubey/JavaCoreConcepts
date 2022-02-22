@@ -3,6 +3,8 @@ package com.company.GenericsUsage;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// Creating a list of objects of different types.
 public class GenericMethods {
     public static void main(String[] args) {
         Character[] charArray = {'a','b','c'};
@@ -18,6 +20,7 @@ public class GenericMethods {
         System.out.println(boolList);
     }
 
+    // Creating a list of objects of different types.
     public static <T> List<T> arrayList(T[] array,List<T> list){
         for (T obj: array ) {
             list.add(obj);
