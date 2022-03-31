@@ -1,6 +1,6 @@
 package com.company.Singelton;
 
-public class SingletnUsage {
+public class SingletonUsage {
     public static void main(String[] args) {
         ClassSingleton singleton = ClassSingleton.getINSTANCE();
         ClassSingleton.setINSTANCE(singleton);

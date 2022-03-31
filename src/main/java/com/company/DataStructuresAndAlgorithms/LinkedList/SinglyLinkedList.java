@@ -67,6 +67,6 @@ public class SinglyLinkedList {
         list.append(5);
         list.insertAtBegining(10);
         list.printlist();
-        System.out.println("the lenght of linked list is :"+list.length());
+        System.out.println("the length of linked list is :"+list.length());
     }
 }
