@@ -4,7 +4,9 @@ public class ClassSingleton {
     private static ClassSingleton INSTANCE;
     private static String info;
 
-    public static ClassSingleton getINSTANCE(){
+    private ClassSingleton(){}
+
+    public static ClassSingleton getInstance(){
         if(INSTANCE==null){
             INSTANCE= new ClassSingleton();
         }
@@ -22,5 +24,6 @@ public class ClassSingleton {
     public static void setINSTANCE(ClassSingleton INSTANCE){
         ClassSingleton.INSTANCE=INSTANCE;
     }
+
 
 }
